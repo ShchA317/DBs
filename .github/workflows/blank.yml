@@ -35,4 +35,4 @@ jobs:
               sudo apt update
               sudo apt install pandoc texlive-xetex fonts-cmu
 
-              pandoc --pdf-engine=xelatex -V mainfont="CMU Serif" -V monofont="CMU Typewriter Text" -V geometry:a4paper -V documentclass=article -o test.pdf ../../lab1/description.md
+              pandoc --pdf-engine=xelatex -V mainfont="CMU Serif" -V monofont="CMU Typewriter Text" -V geometry:a4paper -V documentclass=article -o test.pdf lab1/description.md
