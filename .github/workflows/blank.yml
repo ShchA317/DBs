@@ -36,3 +36,8 @@ jobs:
               sudo apt install pandoc texlive-xetex fonts-cmu
 
               pandoc --pdf-engine=xelatex -V mainfont="CMU Serif" -V monofont="CMU Typewriter Text" -V geometry:a4paper -V documentclass=article -o test.pdf lab1/description.md
+
+      - uses: actions/upload-artifact@master
+        with:
+          name: output
+          path: output
