@@ -37,6 +37,9 @@ jobs:
 
               pandoc --pdf-engine=xelatex -V mainfont="CMU Serif" -V monofont="CMU Typewriter Text" -V geometry:a4paper -V documentclass=article -o test.pdf lab1/description.md
 
-      - uses: actions/upload-artifact@master
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
         with:
-          name: output
+          name: my-artifact
+          path: my_file.txt
+          retention-days: 1
