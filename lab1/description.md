@@ -76,7 +76,7 @@
     Товар: тип, название, обрамление, ощущение цены
     Гарантия: объект гарантии (что гарантируется)
     Помещение: тип
-    Посещение: время начала посещения, время конца посящения
+    Посещение: время начала посещения, время конца посящения, актор
     Отделка: дата проведения работ
     Удобство: дата внедрения
 
@@ -89,4 +89,65 @@
     Помещение   1:М Отделка
     Помещение   М:М Удобство
     Помещение   М:М Посещение
-    
+   
+
+
+
+ 
+```sql
+
+Table table {
+  id integer [primary key]
+  size varchar
+  registration_date timestamp
+}
+
+Table chair {
+  id integer [primary key]
+  type varchar
+  registration_date timestamp
+}
+
+Table interior {
+  id integer [primary key]
+  room_id integer
+  finishing_date timestamp
+}
+
+Table place {
+  id integer [primary key]
+  type varchar
+  registration_date timestamp
+}
+
+Table product {
+  id integer [primary key]
+  type varchar
+  name varchar
+  integer price
+}
+
+Table visit {
+  id integer
+  start_time timestamp
+  finish_time timestamp
+  integer actor_id
+}
+
+Table warranty {
+  id integer [primary key]
+  subject varchar
+}
+
+Table room {
+  id integer [primary key]
+  type varchar
+}
+
+Table feature {
+  id integer [primary key]
+  implementation_date timestamp
+  importance integer
+  subject varchar
+}
+```
