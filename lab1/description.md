@@ -95,17 +95,23 @@
 
  
 ```sql
+Table actor {
+  id integer
+  name varchar
+}
 
 Table table {
   id integer [primary key]
   size varchar
   registration_date timestamp
+  room_id integer
 }
 
 Table chair {
   id integer [primary key]
   type varchar
   registration_date timestamp
+  room_id integer
 }
 
 Table interior {
@@ -118,6 +124,7 @@ Table place {
   id integer [primary key]
   type varchar
   registration_date timestamp
+  room_id integer
 }
 
 Table product {
@@ -131,12 +138,15 @@ Table visit {
   id integer
   start_time timestamp
   finish_time timestamp
-  integer actor_id
+  actor_id integer
+  room_id integer
 }
 
 Table warranty {
   id integer [primary key]
   subject varchar
+  product_id integer
+  place_id integer
 }
 
 Table room {
@@ -149,5 +159,33 @@ Table feature {
   implementation_date timestamp
   importance integer
   subject varchar
+  room_id integer
 }
+
+Table sale {
+  product_id integer
+  place_id integer
+}
+
+Ref: "room"."id" < "place"."room_id"
+
+Ref: "room"."id" < "interior"."room_id"
+
+Ref: "room"."id" < "visit"."room_id"
+
+Ref: "place"."id" < "warranty"."place_id"
+
+Ref: "product"."id" < "warranty"."product_id"
+
+Ref: "room"."id" < "feature"."room_id"
+
+Ref: "room"."id" < "table"."room_id"
+
+Ref: "room"."id" < "chair"."room_id"
+
+Ref: "place"."id" < "sale"."place_id"
+
+Ref: "product"."id" < "sale"."product_id"
+
+Ref: "actor"."id" < "visit"."actor_id"
 ```
