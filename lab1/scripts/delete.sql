@@ -8,7 +8,7 @@ DROP TABLE "interior";
 
 DROP TABLE "place";
 
-DROP TABE "product";
+DROP TABLE "product";
 
 DROP TABLE "visit";
 
