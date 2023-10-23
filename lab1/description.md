@@ -92,100 +92,13 @@
    
 
 
+### Инфологическая модель данных
 
- 
-```sql
-Table actor {
-  id integer
-  name varchar
-}
+![infological_model](images/infological_model.png)
 
-Table table {
-  id integer [primary key]
-  size varchar
-  registration_date timestamp
-  room_id integer
-}
 
-Table chair {
-  id integer [primary key]
-  type varchar
-  registration_date timestamp
-  room_id integer
-}
+### Даталогическая модель данных
 
-Table interior {
-  id integer [primary key]
-  room_id integer
-  finishing_date timestamp
-}
+![datalogical_model](images/datalogical_model.png)
 
-Table place {
-  id integer [primary key]
-  type varchar
-  registration_date timestamp
-  room_id integer
-}
 
-Table product {
-  id integer [primary key]
-  type varchar
-  name varchar
-  integer price
-}
-
-Table visit {
-  id integer
-  start_time timestamp
-  finish_time timestamp
-  actor_id integer
-  room_id integer
-}
-
-Table warranty {
-  id integer [primary key]
-  subject varchar
-  product_id integer
-  place_id integer
-}
-
-Table room {
-  id integer [primary key]
-  type varchar
-}
-
-Table feature {
-  id integer [primary key]
-  implementation_date timestamp
-  importance integer
-  subject varchar
-  room_id integer
-}
-
-Table sale {
-  product_id integer
-  place_id integer
-}
-
-Ref: "room"."id" < "place"."room_id"
-
-Ref: "room"."id" < "interior"."room_id"
-
-Ref: "room"."id" < "visit"."room_id"
-
-Ref: "place"."id" < "warranty"."place_id"
-
-Ref: "product"."id" < "warranty"."product_id"
-
-Ref: "room"."id" < "feature"."room_id"
-
-Ref: "room"."id" < "table"."room_id"
-
-Ref: "room"."id" < "chair"."room_id"
-
-Ref: "place"."id" < "sale"."place_id"
-
-Ref: "product"."id" < "sale"."product_id"
-
-Ref: "actor"."id" < "visit"."actor_id"
-```
