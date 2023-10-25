@@ -1,5 +1,5 @@
 CREATE TABLE "actor" (
-  "id" integer,
+  "id" integer primary KEY,
   "name" varchar
 );
 
@@ -34,7 +34,7 @@ CREATE TABLE "product" (
   "id" integer PRIMARY KEY,
   "type" varchar,
   "name" varchar,
-  "integer" price
+  "price" integer
 );
 
 CREATE TABLE "visit" (
