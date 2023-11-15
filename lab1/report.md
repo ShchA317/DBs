@@ -100,7 +100,7 @@
 
 ### Инфологическая модель данных
 
-![infological_model](images/infological_model.png)
+![infological_model](images/info-model-drawio.png)
 
 
 ### Даталогическая модель данных
