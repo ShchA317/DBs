@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-15T10:07:45.018Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15" etag="gPO7vsHSMlYusSyAXykP" version="22.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-15T10:20:28.838Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15" etag="rg2u0beu7W5Ro03R8YGA" version="22.1.1" type="github">
   <diagram name="Страница — 1" id="LxAUeW16P3nNNGLY0QZY">
-    <mxGraphModel dx="594" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="512" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -158,18 +158,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="EEmmPnVhRQsjPJvQdYjw-36" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EEmmPnVhRQsjPJvQdYjw-17" target="zJj7wf4opZv0uNikAD5w-46">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="240" y="561" as="sourcePoint" />
-            <mxPoint x="300" y="-109" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="70" y="510" />
-              <mxPoint x="20" y="460" />
-              <mxPoint x="40" y="480" />
-              <mxPoint x="10" y="450" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="EEmmPnVhRQsjPJvQdYjw-43" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EEmmPnVhRQsjPJvQdYjw-17" target="zJj7wf4opZv0uNikAD5w-61">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="290" y="590" as="sourcePoint" />
@@ -221,6 +209,12 @@
               <mxPoint x="280" y="840" />
               <mxPoint x="260" y="870" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EEmmPnVhRQsjPJvQdYjw-89" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EEmmPnVhRQsjPJvQdYjw-17" target="EEmmPnVhRQsjPJvQdYjw-37">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="230" y="380" as="sourcePoint" />
+            <mxPoint x="330" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
