@@ -19,7 +19,7 @@ CREATE TABLE "chair" (
 
 CREATE TABLE "interior" (
   "id" integer PRIMARY KEY,
-  "room_id" integer,
+  "room_id" integer not null,
   "finishing_date" timestamp
 );
 
@@ -27,7 +27,7 @@ CREATE TABLE "place" (
   "id" integer PRIMARY KEY,
   "type" varchar,
   "registration_date" timestamp,
-  "room_id" integer
+  "room_id" integer not null
 );
 
 CREATE TABLE "product" (
@@ -41,14 +41,14 @@ CREATE TABLE "visit" (
   "id" integer,
   "start_time" timestamp,
   "finish_time" timestamp,
-  "actor_id" integer,
-  "room_id" integer
+  "actor_id" integer not null,
+  "room_id" integer not null
 );
 
 CREATE TABLE "warranty" (
   "id" integer PRIMARY KEY,
   "subject" varchar,
-  "product_id" integer,
+  "product_id" integer not null,
   "place_id" integer
 );
 
@@ -62,7 +62,7 @@ CREATE TABLE "feature" (
   "implementation_date" timestamp,
   "importance" integer,
   "subject" varchar,
-  "room_id" integer
+  "room_id" integer not null
 );
 
 CREATE TABLE "sale" (
