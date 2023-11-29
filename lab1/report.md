@@ -105,7 +105,7 @@
 
 ### Даталогическая модель данных
 
-![datalogical_model](images/datalogical.png)
+![datalogical_model](images/correct_datalogical.png)
 
 
 
