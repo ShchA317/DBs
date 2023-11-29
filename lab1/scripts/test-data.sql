@@ -1,5 +1,5 @@
 INSERT INTO room (id, type)
-VALUES (1, 'зала') 
+VALUES (1, 'зала');
 
 insert into "actor" (id, name) 
 values (1, 'test_name'); 
@@ -20,16 +20,16 @@ INSERT INTO visit (id, start_time, finish_time, actor_id, room_id)
 VALUES (1, '2022-10-10 11:30:30', '2022-10-11 11:30:30', 1, 1);
 
 INSERT INTO place (id, "type", registration_date, room_id)
-VALUES (1, 'shop', '2022-10-10 10:30:30', 1)
+VALUES (1, 'shop', '2022-10-10 10:30:30', 1);
 
 INSERT INTO product (id, name)
-VALUES (1, 'фото лунника')
+VALUES (1, 'фото лунника');
 
 INSERT INTO sale (product_id, place_id)
-VALUES (1, 1)
+VALUES (1, 1);
 
 INSERT INTO waranty (id, subject, product_id) 
-VALUES (1, 'гарантия подлиности', 1)
+VALUES (1, 'гарантия подлиности', 1);
 
 
 
