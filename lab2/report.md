@@ -60,8 +60,7 @@ id, room_id, finishing_date
 #### feature
 id, implementation_date, importance, subject, room_id
 
-subject, room_id -> 
-
+в этом отношении полная непосредственная функциональная зависимость каждого из атрибутов от первичного ключа
 
 #### actor
 id, name
