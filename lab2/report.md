@@ -92,8 +92,10 @@ id, name
 
 ![denormilized](images/denormilized.png)
 
-Но мы можем пойти чуть дальше и использовать тип jsonb для хранения целого отношения в одном поле, фактически нарушая тем самым 1NF:
-![extreme_denormilized](images/ExtremeDenormilized.png)
+Но мы можем пойти чуть дальше и использовать тип jsonb для хранения целого отношения в одном поле, фактически нарушая тем самым 1NF.
+Посмотрим, как будет выглядеть схема, если избавиться от отношений waranty и feature, сделав их jsonb-аттрибутами отношений product и room соответсвенно:
+
+![extreme_denormilized](images/ExtremeDenormalization.png)
 
 ## Вывод
 
