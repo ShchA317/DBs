@@ -50,7 +50,7 @@ id, start_time, finish_time, room_id, actor_id
 автор работы наивно полагает, что в рамках предметной области или даже рельного мира в известных законах науки о природе, один actor может в один момент времени войти только в одно помещение. А в один момент вромени actor может выйти толькот из одного помещения.
 
 Соответсвенно в этом отношении помимо функциональной зависимости каждого из атрибутов от первичного ключа существует зависимость `id -> start_time, actor_id -> room_id`
-а при finish_time!=null допутимы зависимости `id -> start_time, actor_id, room_id -> finish_time`, `id -> finish_time, actor_id -> start_time, room_id`
+а при finish_time!=null допутимы зависимости `id -> start_time, actor_id -> finish_time`, `id -> finish_time, actor_id -> start_time, room_id`
 
 #### interior
 id, room_id, finishing_date
